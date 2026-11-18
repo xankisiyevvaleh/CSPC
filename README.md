@@ -18,3 +18,11 @@
 * **Chemical Kinetics (`kinetics.py`):** Minimizing the sum of squared residuals with SLSQP yields a fitted rate constant $k \approx 0.2818$.
 * **Chemical Equilibrium (`equilibrium.py`):** Newton's method converged to $x \approx 1.3944$ (non-physical root exceeding initial reactant), while SLSQP found the physical equilibrium at $x \approx 0.7795$ ($0.22\text{ mol } H_2$, $0.22\text{ mol } I_2$, and $1.56\text{ mol } HI$).
 * **Titration Curve (`titration.py`):** Using numerical differentiation ($dpH/dV$), the steepest slope identifies the equivalence point at $V \approx 50.00\text{ mL}$.
+
+---
+
+## PW3 — Statistical Analysis & Hypothesis Testing
+* **Chemical & Cancer Dataset (`chemicals.py`, `session.py`):** Performed descriptive statistics, normality checks, and statistical comparisons across chemical exposure groups.
+* **Heart Disease Cleveland Dataset (`session2.py`):**
+  * **Hypothesis Testing (T-test on `thalach`):** $p = 9.11 \times 10^{-14}$ ($p < 0.05$), confirming a statistically significant difference in maximum heart rate between healthy individuals (`target = 0`) and heart disease patients (`target = 1`).
+  * **Correlation Analysis (Age vs. `thalach`):** Pearson correlation $r = -0.394$, showing a negative relationship where maximum heart rate decreases as age increases.
